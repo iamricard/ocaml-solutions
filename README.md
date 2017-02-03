@@ -9,7 +9,7 @@ My solutions to https://ocaml-book.com by @johnwhitington.
 ## Chapters
 
 1. [Starting Off](https://github.com/rcsole/ocaml-solutions/blob/master/01_starting_off.md)
-1. Names and Functions
+1. [Names and Functions](https://github.com/rcsole/ocaml-solutions/blob/master/02_names_and_functions.md)
 1. Case by Case
 1. Making Lists
 1. Sorting Things
