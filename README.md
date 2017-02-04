@@ -10,7 +10,7 @@ My solutions to https://ocaml-book.com by @johnwhitington.
 
 1. [Starting Off](https://github.com/rcsole/ocaml-solutions/blob/master/01_starting_off.md)
 1. [Names and Functions](https://github.com/rcsole/ocaml-solutions/blob/master/02_names_and_functions.md)
-1. Case by Case
+1. [Case by Case](https://github.com/rcsole/ocaml-solutions/blob/master/03_case_by_case.md)
 1. Making Lists
 1. Sorting Things
 1. Functions upon Functions upon Functions
