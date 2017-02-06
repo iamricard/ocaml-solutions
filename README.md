@@ -12,7 +12,7 @@ My solutions to https://ocaml-book.com by @johnwhitington.
 1. [Names and Functions](https://github.com/rcsole/ocaml-solutions/blob/master/02_names_and_functions.md)
 1. [Case by Case](https://github.com/rcsole/ocaml-solutions/blob/master/03_case_by_case.md)
 1. [Making Lists](https://github.com/rcsole/ocaml-solutions/blob/master/04_making_lists.md)
-1. Sorting Things
+1. [Sorting Things](https://github.com/rcsole/ocaml-solutions/blob/master/05_sorting_things.md)
 1. Functions upon Functions upon Functions
 1. When Things Go Wrong
 1. Looking Things Up
