@@ -40,7 +40,7 @@ range `'a'...'z'`, determines if it is a consonant.**
 ```ocaml
 (* char -> bool *)
 let is_consonant c =
-  c <> 'a' && c <> 'e' && c <> 'i' && c <> 'o' && c <> 'u'
+  c <> 'a' && c <> 'e' && c <> 'i' && c <> 'o' && c <> 'u';;
 ```
 
 **What is the result of the expression `let x = 1 in let x = 2 in x + x`?**
@@ -57,5 +57,5 @@ function in the case of a zero or negative argument?**
 let rec factorial x =
   if x <= 0 then 0 else
     if x = 1 then 1 else
-      x * factorial (x - 1)
+      x * factorial (x - 1);;
 ```
