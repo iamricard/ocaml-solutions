@@ -6,7 +6,7 @@
 * [Case by Case](case-by-case.md)
 * [Making Lists](making-lists.md)
 * [Sorting Things](sorting-things.md)
-* Functions upon Functions upon Functions
+* [Functions upon Functions upon Functions](functions-upon-functions-upon-functions.md)
 * When Things Go Wrong
 * Looking Things Up
 * More with Functions
@@ -17,4 +17,3 @@
 * The Other Numbers
 * The OCaml Standard Library
 * Building Bigger Programs
-

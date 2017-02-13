@@ -13,7 +13,7 @@ My solutions to [https://ocaml-book.com](https://ocaml-book.com) by @johnwhiting
 3. [Case by Case](/case-by-case.md)
 4. [Making Lists](/making-lists.md)
 5. [Sorting Things](/sorting-things.md)
-6. Functions upon Functions upon Functions
+6. [Functions upon Functions upon Functions](/functions-upon-functions-upon-functions.md)
 7. When Things Go Wrong
 8. Looking Things Up
 9. More with Functions
@@ -24,6 +24,3 @@ My solutions to [https://ocaml-book.com](https://ocaml-book.com) by @johnwhiting
 14. The Other Numbers
 15. The OCaml Standard Library
 16. Building Bigger Programs
-
-
-
