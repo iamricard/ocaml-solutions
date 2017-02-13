@@ -1,0 +1,12 @@
+{
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/rcsole/ocaml-solutions/"
+    },
+    "theme-default": {
+      "styles": {
+        "website": "assets/book.css"
+      }
+    }
+  }
+}
