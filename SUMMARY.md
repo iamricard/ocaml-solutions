@@ -7,7 +7,7 @@
 * [Making Lists](making-lists.md)
 * [Sorting Things](sorting-things.md)
 * [Functions upon Functions upon Functions](functions-upon-functions-upon-functions.md)
-* When Things Go Wrong
+* [When Things Go Wrong](when-things-go-wrong.md)
 * Looking Things Up
 * More with Functions
 * New Kinds of Data

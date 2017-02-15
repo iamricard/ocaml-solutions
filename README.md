@@ -14,7 +14,7 @@ My solutions to [https://ocaml-book.com](https://ocaml-book.com) by @johnwhiting
 4. [Making Lists](/making-lists.md)
 5. [Sorting Things](/sorting-things.md)
 6. [Functions upon Functions upon Functions](/functions-upon-functions-upon-functions.md)
-7. When Things Go Wrong
+7. [When Things Go Wrong](/when-things-go-wrong.md)
 8. Looking Things Up
 9. More with Functions
 10. New Kinds of Data
