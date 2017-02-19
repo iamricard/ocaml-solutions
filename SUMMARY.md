@@ -9,7 +9,7 @@
 * [Functions upon Functions upon Functions](functions-upon-functions-upon-functions.md)
 * [When Things Go Wrong](when-things-go-wrong.md)
 * [Looking Things Up](looking-things-up.md)
-* More with Functions
+* [More with Functions](more-with-functions.md)
 * New Kinds of Data
 * Growing Trees
 * In and Out

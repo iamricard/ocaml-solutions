@@ -5,7 +5,8 @@ style.**
 let not b =
   match b with
   | true -> false
-  | _ -> true;;
+  | _ -> true
+;;
 ```
 
 **Use pattern matching to write a recursive function which, given a positive
@@ -15,7 +16,8 @@ integer `n`, returns the sum of all the integers from `1 to n`.**
 let rec sum_up_to n =
   match n > 0 with
   | true -> n + sum_up_to (n - 1)
-  | _ -> 0;;
+  | _ -> 0
+;;
 ```
 
 **Use pattern matching to write a function which, given two numbers `x` and `n`,
@@ -27,7 +29,8 @@ let rec power x n =
   match n with
   | 0 -> 1
   | 1 -> n
-  | _ -> x * power x (n - 1);;
+  | _ -> x * power x (n - 1)
+;;
 ```
 
 **For each of the previous three questions, comment on whether you think it is
@@ -54,10 +57,12 @@ a given letter.**
 let is_lower c =
   match c with
   | 'a'..'z' -> true
-  | _ -> false;;
+  | _ -> false
+;;
 
 let is_upper c =
   match c with
   | 'A'..'Z' -> true
-  | _ -> false;;
+  | _ -> false
+;;
 ```

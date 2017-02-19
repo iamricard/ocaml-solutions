@@ -7,7 +7,8 @@ numbered elements in a list. For example, `evens [2; 4; 2; 4; 2]` should return
 let rec evens xs =
   match xs with
   | _::y::ys -> y :: evens ys
-  | _ -> [];;
+  | _ -> []
+;;
 ```
 
 **Write a function `count_true` which counts the number of `true` elements in a
@@ -23,7 +24,8 @@ let count_true xs =
     | true::tl -> go tl (c + 1)
     | false::tl -> go tl c
   in
-    go xs 0;;
+    go xs 0
+;;
 ```
 
 **Write a function which, given a list, builds a palindrome from it. A
@@ -33,10 +35,12 @@ palindrome.**
 
 ```ocaml
 let make_palindrome xs =
-  xs @ (rev xs);;
+  xs @ (rev xs)
+;;
 
 let is_palindrome xs =
-  xs = (rev xs);;
+  xs = (rev xs)
+;;
 ```
 
 **Write a function `drop_last` which returns all but the last element of a list.
@@ -48,7 +52,8 @@ version?**
 let rec drop_last xs =
   match xs with
   | [] | [_] -> []
-  | y::ys -> y :: drop_last ys;;
+  | y::ys -> y :: drop_last ys
+;;
 
 let drop_last_opt xs =
   let rec go xs acc =
@@ -56,7 +61,8 @@ let drop_last_opt xs =
     | [] | [_] -> rev acc
     | y::ys -> go ys (y :: acc)
   in
-    go xs [];;
+    go xs []
+;;
 ```
 
 **Write a function member of type `α → α list → bool` which returns `true` if an
@@ -67,7 +73,8 @@ should evaluate to `true`, but `member 3 [1; 2]` should evaluate to `false`.**
 let rec member t xs =
   match xs with
   | [] -> false
-  | y::ys -> y = t || member t ys;;
+  | y::ys -> y = t || member t ys
+;;
 ```
 
 **Use your member function to write a function `make_set` which, given a list,
@@ -82,7 +89,8 @@ let make_set xs =
     | [] -> set
     | y::ys -> if member y set then go ys set else go ys (y :: set)
   in
-    go xs [];;
+    go xs []
+;;
 ```
 
 **Can you explain why the `rev` function we defined is inefficient? How does the
@@ -94,7 +102,8 @@ terms of time taken and space used?**
 (* Provided `rev`, for reference. *)
 let rec rev l = match l with
   | [] -> []
-  | h::t -> rev t @ [h];;
+  | h::t -> rev t @ [h]
+;;
 ```
 
 > We know that the `@` operator takes `O(n)` time to run, where `n` is the
@@ -111,5 +120,6 @@ let rev_opt xs =
     | [] -> []
     | y::ys -> go ys (y :: acc)
   in
-    go xs [];;
+    go xs []
+;;
 ```

@@ -9,7 +9,8 @@ let smallest xs =
     | [] -> if s = max_int then raise Not_found else s
     | y::ys -> if y < s && y > 0 then go ys y else go ys s
   in
-    go xs max_int;;
+    go xs max_int
+;;
 ```
 
 **Write another function `smallest_or_zero` which uses the `smallest` function
@@ -18,7 +19,8 @@ but if `Not_found` is raised, returns zero.**
 ```ocaml
 let smallest_or_zero xs =
   try smallest xs with
-    Not_found -> 0;;
+    Not_found -> 0
+;;
 ```
 
 **Write an `exception` definition and a function which calculates the largest
@@ -31,7 +33,8 @@ exception Negative
 let f n =
   if n < 0
     then raise Negative
-    else floor (sqrt n);;
+    else floor (sqrt n)
+;;
 ```
 
 **Write another function which uses the previous one, but handles the exception,
@@ -40,7 +43,8 @@ and simply returns zero when a suitable integer cannot be found.**
 ```ocaml
 let f_catch =
   try f with
-    Negative -> 0;;
+    Negative -> 0
+;;
 ```
 
 **Comment on the merits and demerits of exceptions as a method for dealing with

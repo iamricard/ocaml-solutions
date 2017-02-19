@@ -16,7 +16,7 @@ My solutions to [https://ocaml-book.com](https://ocaml-book.com) by @johnwhiting
 6. [Functions upon Functions upon Functions](/functions-upon-functions-upon-functions.md)
 7. [When Things Go Wrong](/when-things-go-wrong.md)
 8. [Looking Things Up](/looking-things-up.md)
-9. More with Functions
+9. [More with Functions](/more-with-functions.md)
 10. New Kinds of Data
 11. Growing Trees
 12. In and Out

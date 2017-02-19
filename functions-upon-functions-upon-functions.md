@@ -11,17 +11,20 @@ let rec calm_recursive xs =
   match xs with
   | [] -> []
   | '!'::ys -> '.' :: calm_recursive ys
-  | y::ys -> y :: calm_recursive ys;;
+  | y::ys -> y :: calm_recursive ys
+;;
 
 (* char -> char *)
 let exclamation_to_period c =
   match c with
   | '!' -> '.'
-  | a -> a;;
+  | a -> a
+;;
 
 (* char list -> char -> list *)
 let calm =
-  List.map exclamation_to_period;;
+  List.map exclamation_to_period
+;;
 ```
 
 **Write a function `clip` which, given an `integer`, clips it to the range
@@ -34,10 +37,12 @@ integers.**
 let clip n =
   if n > 10 then 10 else
     if n < 1 then 1 else
-      n;;
+      n
+;;
 
 let cliplist =
-  List.map clip;;
+  List.map clip
+;;
 ```
 
 **Express your function `cliplist` again, this time using an anonymous function
@@ -45,7 +50,8 @@ instead of `clip`.**
 
 ```ocaml
 let cliplist =
-  List.map (fun n -> if n > 10 then 10 else if n < 1 then 1 else n);;
+  List.map (fun n -> if n > 10 then 10 else if n < 1 then 1 else n)
+;;
 ```
 
 **Write a function `apply` which, given another function, a number of times to
@@ -57,7 +63,8 @@ return `f (f (f (f (f (f 4))))))`. What is the type of your function?**
 (* (a -> a) -> int -> a -> a *)
 let rec apply f n x =
   if n = 0 then x else
-    f (apply f (n - 1) x);;
+    f (apply f (n - 1) x)
+;;
 ```
 
 **Modify the insertion sort function from the preceding chapter to take a
@@ -72,13 +79,15 @@ let rec insert cmp x xs =
   | y::ys ->
     if cmp x y
       then x :: y :: ys
-      else y :: (insert x ys);;
+      else y :: (insert x ys)
+;;
 
 (* (a -> a -> bool) -> a -> a list *)
 let rec insert_sort cmp xs =
   match xs with
   | [] -> []
-  | y::ys -> insert cmp y (sort ys);;
+  | y::ys -> insert cmp y (sort ys)
+;;
 ```
 
 **Write a function filter which takes a function of type `α → bool` and an `α
@@ -92,7 +101,8 @@ let rec filter f xs =
   | y::ys ->
     if f y
       then y :: filter f ys
-      else filter f ys;;
+      else filter f ys
+;;
 ```
 
 **Write the function `for_all` which, given a function of type `α → bool` and an
@@ -103,7 +113,8 @@ returns `true` for every element of the list. Give examples of its use.**
 let rec for_all f xs =
   match xs with
   | [] -> true
-  | y::ys -> f y && for_all f ys;;
+  | y::ys -> f y && for_all f ys
+;;
 
 for_all (fun x -> x > 1) [1; 3; 4; 5];; (* false *)
 for_all (fun x -> x > 1) [2; 3; 4; 5];; (* true *)
@@ -114,5 +125,6 @@ type `α list list` to produce a `list` of type `β list list`.**
 
 ```ocaml
 let rec mapl f =
-  List.map (List.map f);;
+  List.map (List.map f)
+;;
 ```

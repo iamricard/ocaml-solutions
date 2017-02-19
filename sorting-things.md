@@ -10,6 +10,7 @@ let rec merge x y =
       if hx < hy
         then hx :: merge tx (hy :: ty)
         else hy :: merge (hx :: tx) ty
+;;
 
 let rec msort l =
   match l with
@@ -20,6 +21,7 @@ let rec msort l =
       let left = take pivot l in
         let right = drop pivot l in
           merge (msort left) (msort right)
+;;
 ```
 
 **We know that `take` and `drop` can fail if called with incorrect arguments.
@@ -31,11 +33,13 @@ let rec take n l =
   if n = 0 then [] else
     match l with
       h::t -> h :: take (n - 1) t
+;;
 
 let rec drop n l =
   if n = 0 then l else
     match l with
       h::t -> drop (n - 1) t
+;;
 ```
 
 > `drop` and `take` only fail if the `n` provided is longer than `length l`. But
@@ -53,12 +57,14 @@ let rec insert x xs =
   | y::ys ->
     if x >= y
       then x :: y :: ys
-      else y :: (insert x ys);;
+      else y :: (insert x ys)
+;;
 
 let rec sort xs =
   match xs with
   | [] -> []
-  | y::ys -> insert y (sort ys);;
+  | y::ys -> insert y (sort ys)
+;;
 ```
 
 **Write a function to detect if a list is already in sorted order.**
@@ -68,6 +74,7 @@ let rec is_sorted xs =
   match xs with
   | [] | [_] -> true
   | x::y::ys -> x <= y && is_sorted (y::ys)
+;;
 ```
 
 **We mentioned that the comparison functions like `<` work for many OCaml types.
@@ -100,5 +107,6 @@ let rec insert_sort xs =
   in
     match xs with
     | [] -> []
-    | y::ys -> insert y (sort ys);;
+    | y::ys -> insert y (sort ys)
+;;
 ```
