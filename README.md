@@ -17,7 +17,7 @@ My solutions to [https://ocaml-book.com](https://ocaml-book.com) by @johnwhiting
 7. [When Things Go Wrong](/when-things-go-wrong.md)
 8. [Looking Things Up](/looking-things-up.md)
 9. [More with Functions](/more-with-functions.md)
-10. New Kinds of Data
+10. [New Kinds of Data](/new-kinds-of-data.md)
 11. Growing Trees
 12. In and Out
 13. Putting Things in Boxes
