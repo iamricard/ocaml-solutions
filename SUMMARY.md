@@ -11,7 +11,7 @@
 * [Looking Things Up](looking-things-up.md)
 * [More with Functions](more-with-functions.md)
 * [New Kinds of Data](new-kinds-of-data.md)
-* Growing Trees
+* [Growing Trees](growing-trees.md)
 * In and Out
 * Putting Things in Boxes
 * The Other Numbers
