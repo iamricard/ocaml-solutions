@@ -8,5 +8,6 @@
         "website": "assets/book.css"
       }
     }
-  }
+  },
+  "root": "./book"
 }
