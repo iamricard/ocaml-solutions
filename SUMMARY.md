@@ -12,7 +12,7 @@
 * [More with Functions](more-with-functions.md)
 * [New Kinds of Data](new-kinds-of-data.md)
 * [Growing Trees](growing-trees.md)
-* In and Out
+* [In and Out](in-and-out.md)
 * Putting Things in Boxes
 * The Other Numbers
 * The OCaml Standard Library
